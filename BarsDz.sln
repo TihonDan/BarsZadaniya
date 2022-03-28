@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32126.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1Задания", "BarsDz\1Задания.csproj", "{8B31D15D-1C33-41AF-958B-B0151474B947}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2Задание", "2Задание\2Задание.csproj", "{9E8723CA-B772-4D02-B887-5C02A29604D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B31D15D-1C33-41AF-958B-B0151474B947}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B31D15D-1C33-41AF-958B-B0151474B947}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B31D15D-1C33-41AF-958B-B0151474B947}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B31D15D-1C33-41AF-958B-B0151474B947}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E8723CA-B772-4D02-B887-5C02A29604D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E8723CA-B772-4D02-B887-5C02A29604D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E8723CA-B772-4D02-B887-5C02A29604D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E8723CA-B772-4D02-B887-5C02A29604D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A178ABD8-8939-4750-AF99-B6C969EADE1A}
+	EndGlobalSection
+EndGlobal
