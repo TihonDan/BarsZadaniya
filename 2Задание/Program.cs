@@ -12,7 +12,10 @@ namespace Test
            new Entity (2, 1, "Child of 1 entity"),
            new Entity (3 , 1,"Child of 1 entity"),
            new Entity (4, 2, "Child of 2 entity"),
-           new Entity (5, 4, "Child of 4 entity")
+           new Entity (5, 4, "Child of 4 entity"),
+           new Entity (40, 41, "Child of 40 entity"),
+           new Entity (41, 42, "Child of 40 entity")
+
         };
         static void Main(string[] args)
         {
@@ -20,6 +23,7 @@ namespace Test
             {
                 
             }
+            
         }
 
         public class Entity
@@ -40,7 +44,9 @@ namespace Test
         {
             var dict = new Dictionary<int, List<Entity>>();
 
-            for (int i = 0; i < person.Count; i++)
+            var max = person.Max(p => p.ParentId);
+
+            for (int i = 0; i < max; i++)
             {
                 List<Entity> temp = person.Where(a => a.ParentId == i).ToList();
                 if (temp.Count == 0)
