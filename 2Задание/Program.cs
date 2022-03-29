@@ -46,11 +46,11 @@ namespace Test
             for (int i = 0; i < person.Count; i++)
             {
                 List<Entity> temp = person.Where(a => a.ParentId == i).ToList();
-                if (temp != null)
+                if (temp.Count == 0)
                 {
-                    dict.Add(i, temp);
-                    dict.Remove(3);
+                    continue;
                 }
+                dict.Add(i, temp);
             }
             yield return dict;
         }
