@@ -18,11 +18,7 @@ namespace Test
         {
             foreach (var temp in Method1())
             {
-                var pers = temp;
-                foreach (var dict in pers)
-                {
-                    Console.WriteLine($"{dict.Key} " + "\n" + $"{dict.Value} ");
-                }
+                
             }
         }
 
@@ -40,9 +36,10 @@ namespace Test
             }
         }
 
-        static IEnumerable<Dictionary<int, List<Entity>>> Method1()
+        static Dictionary<int, List<Entity>> Method1()
         {
             var dict = new Dictionary<int, List<Entity>>();
+
             for (int i = 0; i < person.Count; i++)
             {
                 List<Entity> temp = person.Where(a => a.ParentId == i).ToList();
@@ -52,7 +49,8 @@ namespace Test
                 }
                 dict.Add(i, temp);
             }
-            yield return dict;
+
+            return dict;
         }
 
     }
